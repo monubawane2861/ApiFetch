@@ -1,0 +1,95 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container for the App */
+div {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+}
+
+/* Heading */
+h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+/* Answer Box */
+.answerOfquestion {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  min-height: 100px;
+  max-height: 300px;
+  overflow-y: auto;
+  text-align: left;
+}
+
+.answerOfquestion pre {
+  font-family: "Arial", sans-serif;
+  font-size: 1rem;
+  color: #555;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  margin: 0;
+}
+
+/* Input Box */
+.inputValue input {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.inputValue input:focus {
+  border-color: #007bff;
+}
+
+/* Generate Answer Button */
+.AnsBtn button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  outline: none;
+}
+
+.AnsBtn button:hover {
+  background-color: #0056b3;
+}
+
+/* Loading State */
+.answerOfquestion pre[data-loading="true"] {
+  color: #888;
+  font-style: italic;
+}
