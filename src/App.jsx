@@ -40,7 +40,7 @@ const App = () => {
   return (
 
     <div>
-      <h1> Answer new</h1>
+      <h1> Answer</h1>
 
       <div className='answerOfquestion'>
 
